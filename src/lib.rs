@@ -66,7 +66,7 @@ where P: AsRef<Path> + {
                             let value = value + count;
                             storage.insert(filename, value);
                         },
-                        Err(error) => eprintln!("{error}"),
+                        Err(error) => eprintln!("{filename}: {error}"),
                     }
                 });
             },
