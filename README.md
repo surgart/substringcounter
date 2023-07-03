@@ -15,3 +15,13 @@
 ```
 $ cargo run -- <directory> <search_string> > result.json
 ```
+
+## Запуск тестов
+### Подготовка
+``` bash
+$ ./prepare_small_samples.sh
+$ ./prepare_large_samples.sh
+
+$ cargo test
+$ cargo test count_substring_in_large_files -- --ignored
+```
